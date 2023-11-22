@@ -1,0 +1,81 @@
+$sub-text-color : #ffffffb7;
+$main-text-color:#fff;
+$item:100%;
+$continer:1% 3%;
+@mixin flex($justify-content,$alihn-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items:$alihn-items ;
+    flex-wrap: wrap;
+}
+@mixin main-button($bgcolor){
+    width: 9vw;
+    height: 6vh;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    background-color: $bgcolor;
+    color: #fff;
+}
+
+main{
+    padding: $continer;
+    height: 100vh;
+    background-image: linear-gradient(-18deg,#160F30,#150050,#160F30,#160F30 ,#9A0680);
+    .hero{
+        header{
+            nav{
+                @include flex(space-between,flex-start);
+                .logo-continer{
+                    width: 10%;
+                    height: 10%;
+                }
+                ul{
+                    @include flex(flex-end,baseline);
+                    width: 80%;
+                    padding: 1%;
+                    li{
+                        margin-right: 5%;
+                        a{
+                            color: $sub-text-color;
+                        }
+                    }
+                    button{
+                        @include main-button(#190482);
+                    }
+                }    
+            }
+            .content{
+                width: $item;
+                height: 60vh;
+                @include flex(flex-start,center);
+                margin-top: 4%;
+                .left-part{
+                    @include flex(space-around,flex-start);
+                    flex-direction: column;
+                    width: 50%;
+                    height: 100%;
+                    h1{
+                        width: 70%;
+                        font-size: 50px;
+                        color: $main-text-color;
+                    }
+                    p{
+                        color: $sub-text-color;
+                    }
+                    .buttons-continer{
+                        width: 45%;
+                        height: 10%;
+                        @include flex(space-around,center);
+                        button:first-child{
+                            @include main-button(#190482);
+                        }
+                        button:last-child{
+                            @include main-button(#FF6C22);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

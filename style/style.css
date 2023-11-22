@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  padding: 1% 3%;
+  height: 100vh;
+  background-image: linear-gradient(-18deg, #160F30, #150050, #160F30, #160F30, #9A0680);
+}
+main .hero header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+main .hero header nav .logo-continer {
+  width: 10%;
+  height: 10%;
+}
+main .hero header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 1%;
+}
+main .hero header nav ul li {
+  margin-right: 5%;
+}
+main .hero header nav ul li a {
+  color: rgba(255, 255, 255, 0.7176470588);
+}
+main .hero header nav ul button {
+  width: 9vw;
+  height: 6vh;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  background-color: #190482;
+  color: #fff;
+}
+main .hero header .content {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4%;
+}
+main .hero header .content .left-part {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+main .hero header .content .left-part h1 {
+  width: 70%;
+  font-size: 50px;
+  color: #fff;
+}
+main .hero header .content .left-part p {
+  color: rgba(255, 255, 255, 0.7176470588);
+}
+main .hero header .content .left-part .buttons-continer {
+  width: 45%;
+  height: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .hero header .content .left-part .buttons-continer button:first-child {
+  width: 9vw;
+  height: 6vh;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  background-color: #190482;
+  color: #fff;
+}
+main .hero header .content .left-part .buttons-continer button:last-child {
+  width: 9vw;
+  height: 6vh;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  background-color: #FF6C22;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
